@@ -1,0 +1,353 @@
+/* &display=swap */
+@import "reset.css";
+/* ================================================================ */
+
+/* Підключаю шрифти Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,100&display=swap');
+
+/* Підключаю шрифти вручну*/
+
+
+
+/* Підключення шрифту MazzardSoftM-Light в типі накреслення light*/
+@font-face {
+	font-family: "Mariupol";
+	src: url("..//fonts/Mariupol-Bold.woff2") format("woff2"), url("..//fonts/Mariupol-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* Підключення шрифту Mariupol-Medium в типі накреслення Bold */
+@font-face {
+	font-family: "Mariupol";
+	src: url("..//fonts/Mariupol-Medium.woff2") format("woff2"), url("..//fonts/Mariupol-Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+body{
+	font-size: 20px;
+	/* css властивість font-family альтернативний шрифт тип з засічками */
+	font-family: "Raleway", Arial, Helvetica, serif;
+	font-weight: 400;
+	/*css властивість font-style ЗА замовчуванням, далі не пищу альтернативний шрифт тип з засічками */
+	font-style: normal;
+}
+
+.wrapper{
+padding: 0px 50px 0px 50px;
+}
+
+.content{
+margin-bottom:30px;
+/* Встановлюю ширину блоку .content*/
+width: 1200px;
+}
+
+.text-item{
+	padding-bottom: 15px;
+	line-height: 1.2;
+	letter-spacing: 3px;
+}
+.content-navigation{
+	/* !!Тут просто для екперименту, позіціювання НЕ Роблю margin */
+	margin:0px 0px 30px 600px;
+	width: 1200px;
+}
+
+.subtitle{
+	color: rgb(92, 188, 188, 0.5);
+	font-weight: 900;
+	/* Відміняю text-shadow: none ця властивість наслідується*/
+	text-shadow: none;
+	/* css властивість вирівнювання тексту */
+	text-align: right;
+	font-style: italic;
+	padding-top:30px;
+	/* css властивість інтервал між літерами*/
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+
+.title{
+	font-size: 45px;
+/* css властивість font-family альтернативний шрифт тип рублений*/
+	font-family: "Mariupol", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	/*css властивість font-weight для ЕКСПЕРИМЕНТУ */
+	font-weight: 900;
+	/* !!по задумці хочу щоб було у верхньому ругістрі в html написано в нижньому */
+	text-decoration: underline;
+	text-transform: uppercase;
+	/* css властивість вирывнювання тексту */
+	text-align: center;
+	letter-spacing: 5px;
+	margin-bottom: 30px;
+}
+
+/* Комбінація селекторів */
+		/*css властивість font-style:oblique для ЕКСПЕРИМЕНТУ */
+p.text-item{
+	font-size: 18px;
+	font-weight: 700;
+   font-style: oblique;
+}
+
+.text{
+	font-size: 20px;
+	font-style: italic;
+	/* css властивість вирівнювання тексту, розтягуэмо текст по ширині */
+	text-align: justify;
+		/* css властивість line-height: встановлює міжрядковий інтервал */
+	line-height: 1.5;
+}
+
+/* Комбінації селекторів */
+.list a{
+	line-height: 1.25;
+	color: rgb(199, 63, 63, 0.5);
+	font-family: "Mariupol", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/* мої ссилочки */
+a {
+	color: rgb(255, 0, 0);
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+/* Комбынації селекторів, розташовую меню по центру */
+ul.list{
+	text-align: right;
+}
+
+/* Комбынації селекторів вкладеність*/
+.list-social>li>a{
+	font-size: 14px;
+	text-decoration: overline;
+}
+
+.block-social{
+	background-color: rgb(246, 187, 166);
+	margin-bottom: 30px;
+}
+
+.social-one{
+	padding: 0px 0px 15px 50px;
+/* padding: 10%; */
+}
+.social-two {
+	padding: 0px 0px 0px 50px;
+	/* padding: 10%; */
+}
+
+.image-web{
+	/* просто для експерименту картинку тягаю */
+	margin: -95px 0px 30px 1000px;
+}
+
+h2{
+	font-family: "Mariupol", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	/* css властивість text-shadow тінь в тексті для ЕКСПЕРИМЕНТУ  */
+	text-shadow: 7px 7px 5px rgb(155, 82, 55);
+	/* Мультітінь */
+	/* text-shadow: 7px 7px 5px rgb(52, 77, 73), -7px -7px 5px rgb(38, 79, 72); */
+   letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+.variation.text-one{
+	text-decoration: line-through;
+}
+.variation.text-two{
+	text-decoration: overline;
+}
+.variation.text-three {
+	text-decoration: underline;
+}
+.variation.text-for {
+text-decoration: underline;
+/* відміняю декор тексту */
+text-decoration: none;
+}
+
+.content-books{
+	margin: 0px 0px 30px 0px;
+}
+
+span{
+	color: rgb(82, 64, 10);
+	font-weight: 700;
+	/* !!!Не діє */
+	/* width: 800px; */
+}
+
+.variation.text-one,
+.variation.text-two,
+.variation.text-three,
+.variation.text-for {
+font-size: 18px;
+text-align: justify;
+text-indent: 35px;
+line-height: 1.25;
+padding-bottom: 15px;
+}
+
+h2,
+h3{
+	text-align: center;
+}
+
+h3 {
+font-family: "Mariupol", Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 24px;
+margin-bottom:20px;
+text-decoration: underline;
+}
+
+.book-text-jimmi,
+.book-text-dan,
+.book-text-jeniffer,
+.book-text-jeniffer,
+.book-text-stiv,
+.book-text-tim {
+	font-size: 22px;
+	line-height: 1.3;
+	text-align: left;
+	/* css властивість червона строка */ 
+	text-indent: 30px;
+	color: rgb(47, 104, 108);
+	padding-bottom: 15px;
+}
+
+/* Тут прописую всі регіст літер css  властивість text-transform */
+.book-text-jimmi{
+	text-transform: uppercase;
+}
+.book-text-dan{
+	text-transform: capitalize;
+}
+.book-text-jeniffer{
+	text-transform: lowercase;
+	
+}
+.book-text-jeniffer {
+	text-transform: uppercase;
+	/* Відміняю значення text-transform: uppercase; */
+	text-transform: none;
+}
+.book-text-stiv{
+	font-size: 22px;
+	font-style: italic;
+}
+.book-text-tim {
+font-style: oblique;
+}
+
+.image-jimmi,
+.image-dan,
+.image-jeniffer,
+.image-stiv,
+.image-tim{
+margin-bottom: 20px;
+}
+
+
+.planforms {
+	margin: 0px 0px 30px 0px;}
+
+.block-platform {
+	padding: 0px 0px 15px 0px;
+	
+}
+
+.text-platform {
+	padding: 0px 0px 15px 0px;
+	line-height:1.5;
+	text-transform: uppercase;
+}
+
+.about-treehouse,
+.about-codeacademy,
+.about-geekbrains{
+		margin: 0px 0px 20px 0px;
+}
+
+.text-treehouse,
+.text-codeacademy,
+.text-greekbrains {
+line-height: 1.25;
+font-size: 18px;
+padding: 0px 0px 15px 0px;
+}
+
+.text-codeacademy {
+line-height: 1.25;
+font-size: 18px;
+/* css властивість управляє управліннями пробілів */
+word-spacing: 15px;
+}
+
+.text-greekbrains{
+/* css властивість управляє управліннями пробілів */
+/* white-space: nowrap;  */
+text-transform: capitalize;
+}
+
+.image-treehouse,
+.image-codeacademy,
+.image-geekbrains{
+margin-bottom: 20px;
+}
+
+.content-more {
+   	font-size: 25px;
+		font-weight: 700;
+		margin-bottom: 30px;
+}
+
+.content-text{
+	font-size: 15px;
+	text-align: justify;
+   padding: 0px 0px 15px 0px;
+}
+
+
+.image-content-one {
+width: 700px;
+height: 330px;
+}
+
+.image-content-two {
+	width: 700px;
+	height: 480px;
+}
+
+.image-content-one,
+.image-content-two {
+	margin-bottom: 20px;
+}
+
+
+.footer-content {
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: rgb(51, 51, 53, 0.5);
+}
+
+.footer-text{
+	padding-bottom: 15px;
+	text-decoration: underline;
+	letter-spacing: 2px;
+}
+.link-footer a{
+	font-family: "Mariupol", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
